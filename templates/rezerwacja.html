@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="main.css">
+<title>e-gospodarz</title>
+<meta charset="utf-8" />
+<script type="text/javascript" src="http://pihost.pl/j.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#bez').click();
+	});
+</script>
+</head>
+<body>
+
+<div id="wrapper">
+	<div id="log"><img src="images/log.png" alt="" />
+	</div>
+	<div id="logo"><img src="images/logo.png" alt="" />
+	</div>
+	<div id="menu">
+		<a href="index.html" class="item item1">
+			grafik rezerwacji
+		</a>
+		<a href="#"  class="item item2 selected">
+			nowa rezerwacja
+		</a>
+		<a href="zaliczka.html" class="item item3">
+			zaliczka
+		</a>
+		<a href="rozliczenie.html"  class="item item4">
+			rozliczaj się
+		</a>
+		<a href=" "  class="item item5">
+			wyślij fakturę
+		</a>
+		<div class="item item6">
+			moje dokumenty
+		<div id="rozwin">
+		<ul style="list-style-type: square;">
+		<li class="roz oplata white"><a href="">
+			opłata klimatyczna
+		</a></li>
+		<li  class="roz rejestr white"><a href="">
+			rejestr kasowy
+		</a></li>
+		<li class="roz wystawione white"><a href="">
+			wystawione faktury
+		</a></li>
+		</ul>
+		</div>
+		</div>
+	</div>
+	
+	<div id="content">
+	<div id="lpanel">
+	<ul>
+	<li class="moje moje1 black"><a href="goscie.html">
+	MOI GOŚCIE
+	</a></li>
+	<li class="moje moje2 black"><a href="pokoje.html">
+	MOJE POKOJE
+	</a></li>
+	</ul>
+	<div class="titem opcja"><img src="images/opcja.png" alt="" />
+	</br>zapisz rezerwację
+	</div>
+	<div class="titem pobierz"><img src="images/pobierz.png" alt="" />
+	</br>pobierz potwierdzenie rezerwacji
+	</div>
+	<div class="titem wyślij"><img src="images/wyslij.png" alt="" />
+	</br>wyślij potwierdzenie rezerwacji
+	</div>
+	</div>
+	<div id="ppanel">
+	<div class="bg bg1">
+	<div class="dnormal d1">
+	Dane kontaktowe
+	</div>
+	<div class="dnormal d2">
+	Uwagi	
+	</div>
+	</div>
+	<div class="bg bg2">
+	<div class="dnormal d3">
+	Termin
+	</div>
+	<div class="dnormal d4"> 
+	Cena
+	</div>
+	</div>
+	<div class="wiersz wiersz1">
+	<div id="termin1">
+	<div class="czcionka text">
+	Wybierz pokój:
+	</div>
+	<div class="czcionka pokoj">
+	<select id="wybierz_pokoj[]" name="wybierz_pokoj[]"style="font-family: Arial; font-size: 17px; border: #c2c5a4 solid 1px;">
+	<option> pokój 11 </option>
+	<option> pokój 12 </option>
+	<option> pokój 21 </option>
+	<option> pokój 22 </option>
+	<option> pokój 23 </option>
+	<option> pokój 24 </option>
+	<option> pokój 25 </option>
+	<option> pokój 26 </option>
+	<option> pokój 27 </option>
+	<option> pokój 28 </option>
+	<option> pokój 31 </option>
+	<option> pokój 32 </option>
+	<option> pokój 33 </option>
+	<option> pokój 34 </option>
+	<option> pokój 35 </option>
+	<option> pokój 36 </option>
+	</select>
+	</div>
+	<div class="czcionka data1">
+	<label for="data1">Data przyjazdu:</label></br>
+	<input type="text" name="data1" id="data1" size="20"></br>
+	</div>
+	<div class="czcionka data2">
+	<label for="data2">Data wyjazdu:</label></br>
+	<input type="text" name="data2" id="data2" size="20"></br>
+	</div>
+	<div class="czcionka l_dni">
+	Suma dni pobytu:
+	</div>
+	</div>
+	<div id="cena">
+	<div class="czcionka cena1">
+	Cena pokoju: &nbsp; 120zł
+	</div>
+	<div class="czcionka field">
+	<fieldset>
+	<legend>Wybierz promocje:</legend>
+	<input onclick="$('#radioSwitch').html('Cena po negocjacji:');" type="radio" name="pro" value="bez" id="bez" checked="checked" />
+	<label for="bez">bez promocji</label></br>
+	<input onclick="$('#radioSwitch').html('Suma dni poza sezonem:');"  type="radio" name="pro" value="bez" id="poza_sezonem" />	
+	<label for="poza_sezonem">pozasezonowa</label></br>
+	<input onclick="$('#radioSwitch').html('');"  type="radio" name="pro" value="bez" id="staly_klient"  />
+	<label for="staly_klient">dla stałego klienta</label>
+	</fieldset>
+	</div>
+	<div id="radioSwitch" class="czcionka cena2">
+	Negocjacja cenowa:
+	</div>
+	</div>
+	</div>
+	<div class="wiersz wiersz2">
+	<div id="dane">
+	<div id="roz">
+	<div id="granica">
+	<div class="granica iname">
+	<label for="iname">Imię:</label></br>
+	<input type="text" name="iname" id="iname" size="23"></br>
+	</div>
+	<div class="granica nname">
+	<label for="nname">Nazwisko:</label></br>
+	<input type="text" name="nname" id="nname" size="23"></br>
+	</div>
+	<div class="granica tname">
+	<label for="tname">Telefon:</label></br>
+	<input type="text" name="tname" id="tname" size="23"></br>
+	</div>
+	<div class="granica ename">
+	<label for="ename">e-mail:</label></br>
+	<input type="text" name="ename" id="ename" size="23"></br>
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="czcionka aktualna">
+	<label for="aktualnan">Termin wpłaty zaliczki:</label></br>
+	<input type="text" name="aktualnan" id="aktualnan" size="23"></br>
+	</div>
+	<div class="czcionka kwota">
+	<label for="kwota">Kwota zaliczki (pln):</label></br>
+	<input type="text" name="kwota" id="kwota" size="23"></br>
+	</div>
+	<textarea name="uwagi" id="uwagi"></textarea>
+	</div>
+	
+	</body>
+</html>

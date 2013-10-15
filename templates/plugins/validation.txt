@@ -1,0 +1,9 @@
+validation@peepsout.com
+Validation Required To Activate your Peepsout Account
+
+Thanks for regsitering with PeepsOut. Make sure to "Like" us on Facebook to receive updates of new venues and deals.
+
+After validating your account, you'll be able to start your own directory of favorite venues and share them with your friends. Get ready for a new outting experience!
+
+Please use following link to validate your account:
+{link}

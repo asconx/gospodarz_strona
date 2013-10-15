@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="main.css">
+<title>e-gospodarz</title>
+<meta charset="utf-8" />
+</head>
+<script type="text/javascript" src="http://pihost.pl/j.js">
+</script>
+<body>
+
+<div id="wrapper">
+	<div id="log"><img src="images/log.png" alt="" />
+	</div>
+	<div id="logo"><img src="images/logo.png" alt="" />
+	</div>
+	<div id="menu">
+		<a href="index.html" class="item item1 selected">
+			grafik rezerwacji
+		</a>
+		<a href="rezerwacja.html"  class="item item2">
+			nowa rezerwacja
+		</a>
+		<a href="zaliczka.html" class="item item3">
+			zaliczka
+		</a>
+		<a href="rozliczenie.html"  class="item item4">
+			rozliczaj się
+		</a>
+		<a href=" "  class="item item5">
+			wyślij fakturę
+		</a>
+		<div class="item item6">
+			moje dokumenty
+		<div id="rozwin">
+		<ul style="list-style-type: square;">
+		<li class="roz oplata white"><a href="">
+			opłata klimatyczna
+		</a></li>
+		<li  class="roz rejestr white"><a href="">
+			rejestr kasowy
+		</a></li>
+		<li class="roz wystawione white"><a href="">
+			wystawione faktury
+		</a></li>
+		</ul>
+		</div>
+		</div>
+	</div>
+		
+		
+	<div id="content">
+		<div id="lpanel">
+			<ul>
+			<li class="moje moje1 black"><a href="goscie.html">
+			MOI GOŚCIE
+			</a></li>
+			<li class="moje moje2 black"><a href="pokoje.html">
+			MOJE POKOJE
+			</a></li>
+			</ul>
+			<div id="dane_osobowe">
+			</div>
+			<div class="titem save"><img src="images/save.png" alt="" />
+			<br /> zapisz
+			</div>
+			<div class="titem remove"><img src="images/remove.png" alt="" />
+			<br /> usuń
+			</div>
+			<div id="termin">
+
+			</div>
+			<div class="ntitem uwagi1">
+			Uwagi do rezerwacji:
+			</div>
+			
+			<textarea name="uwagi2" id="uwagi2"></textarea>
+		
+			<div class="ntitem legenda">
+			Legenda:
+			</div>
+			<div id="circle1"><img src="images/circle1.png" alt="" />
+			</div>
+			<div id="circle2"><img src="images/circle2.png" alt="" />
+			</div>
+			<div id="circle3"><img src="images/circle3.png" alt="" />
+			</div>
+			<div class="ntitem lopis">
+			Wstępnie zarezerwowany</br>
+			Rezerwacja + zaliczka</br>
+			Pełna wpłata </br></br>
+			</div>
+		</div>
+		<div id="rpanel">
+			{module_content}
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
