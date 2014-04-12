@@ -1,5 +1,5 @@
 <?php
-
+ 
 function thumb($newwidth, $newheight, $filename)
 {
 	// Get new sizes
