@@ -1,4 +1,4 @@
-body {
+﻿body {
 	margin: 0;
 	padding: 0;
 	background: white;
@@ -9,7 +9,7 @@ body {
 	width: 1066px;
 	margin: 46px auto;
 	height: 108px;
-	padding-top: 50px;
+	padding-top: 60px;
 }
 #log {
 	position: absolute;
